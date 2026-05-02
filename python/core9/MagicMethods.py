@@ -20,3 +20,22 @@ class B:
 b1=B(25)
 print(b1+"Hello")
 
+#create a class Vector with instance Variables x,y as their co-ordinates
+# let's take v1,v2 as vector objects
+# v1+v2-> should return addition of co-ordinates
+# v1-v2
+
+class Vector:
+    def __init__(self,a,b):
+        self.x=a
+        self.y=b
+    def __add__(self,other):
+        return self.x+other.x,self.y+other.y
+    def __sub__(self,other):
+        return self.x-other.x,self.y-other.y
+
+v1=Vector(1,2)
+v2=Vector(3,4)
+print(v1+v2)
+print(v1-v2)
+
