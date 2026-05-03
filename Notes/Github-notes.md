@@ -38,5 +38,27 @@ rm -rf filename
 ```
 git reset <filepath>
 ```
-
-
+10.To create a separate structure for files that are in staging area that are not meant to be committed in the git history
+```
+git stash
+```
+11.To move the files that are in stash area to unstaged area
+```
+git stash pop
+```
+12.To clear the files in stash area we use
+```
+git stash clear
+```
+13.To connect remote repository to local repository
+```
+git remote add origin URL
+```
+14.To show URLs that are connected to the folder
+```
+git remote -v
+```
+15.To push the changes to the URL or remote repository
+```
+git push origin main
+```
