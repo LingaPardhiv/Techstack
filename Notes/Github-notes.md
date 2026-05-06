@@ -62,3 +62,18 @@ git remote -v
 ```
 git push origin main
 ```
+16.To download project file from github(When we fork other project files)
+```
+git clone URL
+```
+17.To create a New branch
+```
+git branch branchName
+```
+~ Always add new changes to separate branch and not to main branch while working on a project
+
+18.To change the pointer to another branch which is pointing to main branch or other
+```
+git checkout branchName
+```
+~ Pull Request: A message sent to owner of the repository to combine the branch code into main code
