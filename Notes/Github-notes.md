@@ -77,3 +77,18 @@ git branch branchName
 git checkout branchName
 ```
 ~ Pull Request: A message sent to owner of the repository to combine the branch code into main code
+
+19.To Force push we use(In case the git commits is behind the github commits)
+```
+git push origin main -f
+```
+20.To make forked project even with main project fetch all the commits. Then reset the main branch 
+of origin to main branch of upstream(upstream refers to main project URL)
+```
+git fetch --all --prune
+git reset --hard upstream/main
+```
+or we can use this command to make even with the main project code
+```
+git pull upstream main
+```
