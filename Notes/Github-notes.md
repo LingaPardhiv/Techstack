@@ -92,3 +92,9 @@ or we can use this command to make even with the main project code
 ```
 git pull upstream main
 ```
+21.To merge multiple commits into a single commit we use 
+```
+git rebase -i <filepath>
+```
+-i means interactive environment\
+squash means merge the commit to previous pick commit
