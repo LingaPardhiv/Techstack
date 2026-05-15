@@ -15,17 +15,17 @@
 #             print(i,end="")
 
 #if a number is prime number print its position if not print not a prime number
-def isPrime(n):
+def isprime(n):
     fc=0
     for i in range(1,n+1):
         if n%i==0:
             fc+=1
     return fc==2
-n=int(input())
+s=int(input())
 c=0
-if isPrime(n):
-    for i in range(1,n+1):
-        if isPrime(i):
+if isprime(s):
+    for j in range(1,s+1):
+        if isprime(j):
             c+=1
     print(c)
 else:
