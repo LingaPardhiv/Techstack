@@ -11,7 +11,7 @@
 #     b=c
 
 #if a number is fibonacci number print its position if not print not a fibonacci number
-def isFibo(n):
+def isfibo(n):
     a=0
     b=1
     c=0
@@ -21,11 +21,11 @@ def isFibo(n):
         c=a+b
         a=b
         b=c
-n=int(input())
+s=int(input())
 c1=0
-if isFibo(n):
-    for i in range(1,n+1):
-        if isFibo(i):
+if isfibo(s):
+    for i in range(1,s+1):
+        if isfibo(i):
             c1+=1
     print(c1)
 else:
