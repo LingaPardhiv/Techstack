@@ -31,6 +31,7 @@ def isprime(n):
 # else:
 #     print("Not a Prime Number")
 
+#function for printing the nth position Prime Number
 def pos(i):
     c=0
     n=1
