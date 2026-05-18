@@ -21,12 +21,25 @@ def isprime(n):
         if n%i==0:
             fc+=1
     return fc==2
-s=int(input())
-c=0
-if isprime(s):
-    for j in range(1,s+1):
-        if isprime(j):
+# s=int(input())
+# c=0
+# if isprime(s):
+#     for j in range(1,s+1):
+#         if isprime(j):
+#             c+=1
+#     print(c)
+# else:
+#     print("Not a Prime Number")
+
+def pos(i):
+    c=0
+    n=1
+    while c<=i:
+        if isprime(n):
             c+=1
-    print(c)
-else:
-    print("Not a Prime Number")
+            if c==i:
+                break
+        n=n+1
+    return n
+
+print(pos(5))
