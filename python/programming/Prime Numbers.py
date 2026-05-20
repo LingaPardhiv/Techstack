@@ -42,5 +42,5 @@ def pos(i):
                 break
         n=n+1
     return n
-
-print(pos(5))
+k=int(input())
+print(pos(k))
