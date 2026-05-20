@@ -56,7 +56,7 @@ class B:
         if name=='x':
             pin=input()
             if pin=="522651":
-                return super(),__getattr__(name)
+                return super().__getattr__(name)
 
     def __getattr__(self,name):
         return "Not found"
