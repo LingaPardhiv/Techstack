@@ -42,3 +42,43 @@ Output:
 ```
 My name is Rohan and I am 20 years old.
 ```
+Constructor:
+
+A constructor is a special method in a class used to create and
+initialize an object of a class. Constructor is a unique function 
+that gets called automatically when an object is created of a class.
+
+Syntax:
+```
+def init(self):
+    # initializations
+```
+
+Decorator:
+
+A decorator is a function that takes another function as an argument 
+and returns a new function that modifies the behaviour of the original 
+function. The new function is often referred to as a "decorated" 
+function.
+
+Syntax:
+```
+@decorator_function
+def my_function():
+    pass
+```
+Example:
+```
+def greet(fx):
+    def mfx(*args,**kwargs):
+        print("Good Morning")
+        fx(*args,**kwargs)
+        print("Thanks for using this function")
+    return mfx
+
+@greet
+def add(a,b):
+    print(a+b)
+
+add(1,2)
+```
