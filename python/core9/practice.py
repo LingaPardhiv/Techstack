@@ -1,9 +1,22 @@
-class Details:
-    name = "Rohan"
-    age = 20
+# class Details:
+#     name = "Rohan"
+#     age = 20
+#
+#     def info(self):
+#         print(f'My name is {self.name} and I am {self.age} years old.')
+#
+# obj1 = Details()
+# obj1.info()
 
-    def info(self):
-        print(f'My name is {self.name} and I am {self.age} years old.')
+def greet(fx):
+    def mfx(*args,**kwargs):
+        print("Good Morning")
+        fx(*args,**kwargs)
+        print("Thanks for using this function")
+    return mfx
 
-obj1 = Details()
-obj1.info()
+@greet
+def add(a,b):
+    print(a+b)
+
+add(1,2)
