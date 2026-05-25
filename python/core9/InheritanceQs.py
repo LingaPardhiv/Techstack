@@ -65,20 +65,20 @@
 # b.wheels()
 
 #Q5
-class Employee:
-    def salary(self):
-        basic_salary=30000
-        print(f'Employee Salary : {basic_salary}')
-
-class Manager(Employee):
-    def salary(self):
-        basic_salary=30000
-        incentive=10000
-        total_salary=basic_salary + incentive
-        print(f'Manager Salary : {total_salary}')
-
-e=Employee()
-e.salary()
-
-m=Manager()
-m.salary()
+# class Employee:
+#     def salary(self):
+#         basic_salary=30000
+#         print(f'Employee Salary : {basic_salary}')
+#
+# class Manager(Employee):
+#     def salary(self):
+#         basic_salary=30000
+#         incentive=10000
+#         total_salary=basic_salary + incentive
+#         print(f'Manager Salary : {total_salary}')
+#
+# e=Employee()
+# e.salary()
+#
+# m=Manager()
+# m.salary()
