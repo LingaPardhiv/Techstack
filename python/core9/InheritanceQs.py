@@ -85,17 +85,39 @@
 
 # Create two classes Father and Mother, both defining a method skills(). Create
 # class Child(Father, Mother) and check which skills() runs using MRO.
-class Father:
-    def skills(self):
-        print("Father skills")
+# class Father:
+#     def skills(self):
+#         print("Father skills")
+#
+# class Mother:
+#     def skills(self):
+#         print("Mother skills")
+#
+# class Child(Father,Mother):
+#     pass
+#
+# obj=Child()
+# obj.skills()
+# print(Child.mro())
 
-class Mother:
-    def skills(self):
-        print("Mother skills")
+# Create class Person with a constructor __init__(name). Create class
+# Student(Person) with constructor __init__(name, roll). Use super() to call the
+# parent constructor.
 
-class Child(Father,Mother):
-    pass
+class Person:
+    def __init__(self,name):
+        self.name = name
+        print("person constructor called")
 
-obj=Child()
-obj.skills()
-print(Child.mro())
+class Student(Person):
+    def __init__(self,name,roll):
+        super().__init__(name)
+        self.roll=roll
+        print("student constructor called")
+
+    def display(self):
+        print("Name:",self.name)
+        print("Roll No:",self.roll)
+
+obj1=Student("arjun",22)
+obj1.display()
