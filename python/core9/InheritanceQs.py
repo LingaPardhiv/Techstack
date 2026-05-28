@@ -104,20 +104,20 @@
 # Student(Person) with constructor __init__(name, roll). Use super() to call the
 # parent constructor.
 
-class Person:
-    def __init__(self,name):
-        self.name = name
-        print("person constructor called")
-
-class Student(Person):
-    def __init__(self,name,roll):
-        super().__init__(name)
-        self.roll=roll
-        print("student constructor called")
-
-    def display(self):
-        print("Name:",self.name)
-        print("Roll No:",self.roll)
-
-obj1=Student("arjun",22)
-obj1.display()
+# class Person:
+#     def __init__(self,name):
+#         self.name = name
+#         print("person constructor called")
+#
+# class Student(Person):
+#     def __init__(self,name,roll):
+#         super().__init__(name)
+#         self.roll=roll
+#         print("student constructor called")
+#
+#     def display(self):
+#         print("Name:",self.name)
+#         print("Roll No:",self.roll)
+#
+# obj1=Student("arjun",22)
+# obj1.display()
