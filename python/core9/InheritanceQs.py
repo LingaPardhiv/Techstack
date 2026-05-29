@@ -13,7 +13,7 @@
 # obj1=Dog()
 # obj1.sound()
 
-#Q2
+# Q2
 # class A:
 #     def show(self):
 #         print("A class")
@@ -104,20 +104,51 @@
 # Student(Person) with constructor __init__(name, roll). Use super() to call the
 # parent constructor.
 
-# class Person:
-#     def __init__(self,name):
-#         self.name = name
-#         print("person constructor called")
+class Person:
+    def __init__(self,name):
+        self.name = name
+        print("person constructor called")
+
+class Student(Person):
+    def __init__(self,name,roll):
+        super().__init__(name)
+        self.roll=roll
+        print("student constructor called")
+
+    def display(self):
+        print("Name:",self.name)
+        print("Roll No:",self.roll)
+
+obj1=Student("arjun",22)
+obj1.display()
+
+# Create class University with a class variable and a class method. Inherit it
+# into class College and access the parent’s class variable from the child class.
+
+# class University:
+#     university_name="JNTU Hyderabad"
 #
-# class Student(Person):
-#     def __init__(self,name,roll):
-#         super().__init__(name)
-#         self.roll=roll
-#         print("student constructor called")
+#     @classmethod
+#     def show_university(cls):
+#         print("University name",cls.university_name)
 #
-#     def display(self):
-#         print("Name:",self.name)
-#         print("Roll No:",self.roll)
+# class College(University):
+#     college_name = "St.Martin's Engineering College"
 #
-# obj1=Student("arjun",22)
-# obj1.display()
+# print(College.university_name)
+# College.show_university()
+
+# Create class MathOps with a static method add(a, b). Create class
+# AdvancedOps(MathOps) and use the static method without overriding it.
+
+# class MathOps:
+#     @staticmethod
+#     def add(a,b):
+#         return a + b
+#
+# class AdvancedOps(MathOps):
+#     pass
+#
+# result= AdvancedOps.add(10,20)
+# print(result)
+
