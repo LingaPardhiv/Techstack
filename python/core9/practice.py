@@ -55,11 +55,6 @@ class BankAccount:
     def __lt__(self,other):
         return self.balance < other.balance
 
-    def __getattribute__(self,name):
-        if name in ("balance", "account_holder"):
-            print(f'Accessing attribute: {name}')
-        return object.__getattribute__(self,name)
-
 b1=BankAccount('Anbariv',50000)
 b2=BankAccount("Amith",40000)
 
