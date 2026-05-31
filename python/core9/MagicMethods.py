@@ -60,7 +60,3 @@ class B:
 
     def __getattr__(self,name):
         return "Not found"
-
-    def __repr__(self):
-        return f' '
-
