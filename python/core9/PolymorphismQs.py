@@ -73,14 +73,61 @@
 # b2.move()
 
 #Q6
-class Payment:
-    def process(self,amount):
-        print(f'Amount processed {amount}')
-class CreditCardPayment(Payment):
-    def process(self,amount,card_type):
-        print(f'Amount processed {amount}, card type {card_type}')
+# class Payment:
+#     def process(self,amount):
+#         print(f'Amount processed {amount}')
+# class CreditCardPayment(Payment):
+#     def process(self,amount,card_type):
+#         print(f'Amount processed {amount}, card type {card_type}')
+#
+# p=Payment()
+# p.process(20000)
+# c=CreditCardPayment()
+# c.process(10000,"Visa-card")
 
-p=Payment()
-p.process(20000)
-c=CreditCardPayment()
-c.process(10000,"Visa-card")
+#Q8
+# class Account:
+#     def withdraw(self,amount):
+#         print(f'Withdraw amount {amount}')
+#
+# class SavingsAccount(Account):
+#     def withdraw(self,amount):
+#         print(f'SavingsAccount Withdrawal')
+#         super().withdraw(amount)
+#
+# class PremiumSavingsAccount(SavingsAccount):
+#     def withdraw(self,amount):
+#         print(f'PremiumSavingsAccount Withdrawal')
+#         super().withdraw(amount)
+#
+# a=Account()
+# a.withdraw(1000)
+# s=SavingsAccount()
+# s.withdraw(2000)
+# p=PremiumSavingsAccount()
+# p.withdraw(3000)
+
+#Q9
+def draw(shape):
+    shape.draw()
+
+class Circle:
+    def draw(self):
+        print("Drawing a Circle")
+
+class Square:
+    def draw(self):
+        print("Drawing a Square")
+
+class Rectangle:
+    def draw(self):
+        print('Drawing a rectangle')
+
+class Car:
+    def draw(self):
+        print('Drawing a car')
+
+draw(Circle())
+draw(Square())
+draw(Rectangle())
+draw(Car())
