@@ -87,47 +87,66 @@
 
 #Q8
 # class Account:
-#     def withdraw(self,amount):
-#         print(f'Withdraw amount {amount}')
+#     def withdraw(self):
+#         print(f'Withdraw amount')
 #
 # class SavingsAccount(Account):
-#     def withdraw(self,amount):
+#     def withdraw(self):
 #         print(f'SavingsAccount Withdrawal')
-#         super().withdraw(amount)
 #
 # class PremiumSavingsAccount(SavingsAccount):
-#     def withdraw(self,amount):
+#     def withdraw(self):
+#         super().withdraw()
 #         print(f'PremiumSavingsAccount Withdrawal')
-#         super().withdraw(amount)
 #
 # a=Account()
-# a.withdraw(1000)
+# a.withdraw()
 # s=SavingsAccount()
-# s.withdraw(2000)
+# s.withdraw()
 # p=PremiumSavingsAccount()
-# p.withdraw(3000)
+# p.withdraw()
 
 #Q9
-def draw(shape):
-    shape.draw()
+# def draw(shape):
+#     shape.draw()
+#
+# class Circle:
+#     def draw(self):
+#         print("Drawing a Circle")
+#
+# class Square:
+#     def draw(self):
+#         print("Drawing a Square")
+#
+# class Rectangle:
+#     def draw(self):
+#         print('Drawing a rectangle')
+#
+# class Car:
+#     def draw(self):
+#         print('Drawing a car')
+#
+# draw(Circle())
+# draw(Square())
+# draw(Rectangle())
+# draw(Car())
 
-class Circle:
-    def draw(self):
-        print("Drawing a Circle")
-
-class Square:
-    def draw(self):
-        print("Drawing a Square")
-
-class Rectangle:
-    def draw(self):
-        print('Drawing a rectangle')
-
-class Car:
-    def draw(self):
-        print('Drawing a car')
-
-draw(Circle())
-draw(Square())
-draw(Rectangle())
-draw(Car())
+#Q10
+# class UPI:
+#     def pay(self):
+#         print('Payment done using UPI')
+#
+# class Card:
+#     def pay(self):
+#         print('Payment done using card')
+#
+# class Cash:
+#     def pay(self):
+#         print('Payment done using cash')
+#
+# def process_payment(payment_method):
+#     payment_method.pay()
+#
+# process_payment(UPI())
+# process_payment(Card())
+# process_payment(Cash())
