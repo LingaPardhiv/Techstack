@@ -42,5 +42,10 @@ def pos(i):
                 break
         n=n+1
     return n
-k=int(input())
-print(pos(k))
+
+#for printing column wise prime numbers
+n=int(input())
+for i in range(n):
+    for j in range(n):
+        print(pos(i+1+j*n),end=" ")
+    print()
