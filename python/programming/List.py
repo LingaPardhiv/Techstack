@@ -56,12 +56,17 @@
 # for i in a:
 #     if isprime(i):
 #         print(i,end=" ")
-#12Q
-
 #13Q
 # a=[1,2,34,5,6]
 # print(a[::-1])
 #14Q
-
-
+# n=int(input())
+# a=[]
+# for i in range(n):
+#     a.append(int(input()))
+# keyVal=int(input())
+# for i in range(1,n):
+#     for j in range(i,n):
+#         if a[i]+a[j]==keyVal:
+#             print(a[i],a[j])
 
