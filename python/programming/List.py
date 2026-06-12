@@ -72,13 +72,33 @@
 
 #Maximum and Minimum
 #19Q
-n=int(input())
-a=[]
-for i in range(n):
-    a.append(int(input()))
-k=int(input())
-for i in range(0,n-1):
-    for j in range(0,n-1):
-        if a[j]>a[j+1]:
-            a[j],a[j+1]=a[j+1],a[j]
-print(a[n-k])
+# n=int(input())
+# a=[]
+# for i in range(n):
+#     a.append(int(input()))
+# k=int(input())
+# for i in range(0,n-1):
+#     for j in range(0,n-1):
+#         if a[j]>a[j+1]:
+#             a[j],a[j+1]=a[j+1],a[j]
+# print(a[n-k])
+
+#Question
+# a=[10,20,30,40,50]
+# b=[]
+# sum=0
+# for i in a:
+#     sum+=i
+#     b.append(sum)
+# print(b)
+
+#Question
+b=[]
+c=0
+k=1
+while c<5:
+    if k%2==0:
+        b.append(k)
+        c+=1
+    k+=1
+print(b)
