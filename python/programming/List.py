@@ -84,8 +84,8 @@
 # print(a[n-k])
 
 #Taking input with spaces
-a=list(map(int,input().split()))
-print(a)
+# a=list(map(int,input().split()))
+# print(a)
 
 #Question
 # a=[10,20,30,40,50]
