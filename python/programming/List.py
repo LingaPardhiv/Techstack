@@ -83,6 +83,10 @@
 #             a[j],a[j+1]=a[j+1],a[j]
 # print(a[n-k])
 
+#Taking input with spaces
+a=list(map(int,input().split()))
+print(a)
+
 #Question
 # a=[10,20,30,40,50]
 # b=[]
@@ -93,12 +97,42 @@
 # print(b)
 
 #Question
-b=[]
-c=0
-k=1
-while c<5:
-    if k%2==0:
-        b.append(k)
-        c+=1
-    k+=1
-print(b)
+# b=[]
+# c=0
+# k=1
+# while c<5:
+#     if k%2==0:
+#         b.append(k)
+#         c+=1
+#     k+=1
+# print(b)
+
+#Question
+# a=[]
+# c=0
+# p=2
+# n=5
+# x=(n*(n+1))//2
+# while c<x:
+#     fc=0
+#     for i in range(1,p+1):
+#         if p%i==0:
+#             fc+=1
+#     if fc==2:
+#         a.append(p)
+#         c+=1
+#     p+=1
+# z=0
+# for i in range(1,n+1):
+#     for j in range(1,i+1):
+#         print(a[z],end=" ")
+#         z=z+1
+#     print()
+# for i in range(1,n+1):
+#     k=i
+#     z=n-1
+#     for j in range(1,i+1):
+#         print(a[k-1],end=" ")
+#         k=k+z
+#         z=z-1
+#     print()
