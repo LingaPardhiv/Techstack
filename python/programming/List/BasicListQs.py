@@ -23,34 +23,34 @@
 # print(b)
 
 #Question
-# a=[]
-# c=0
-# p=2
-# n=5
-# x=(n*(n+1))//2
-# while c<x:
-#     fc=0
-#     for i in range(1,p+1):
-#         if p%i==0:
-#             fc+=1
-#     if fc==2:
-#         a.append(p)
-#         c+=1
-#     p+=1
-# z=0
-# for i in range(1,n+1):
-#     for j in range(1,i+1):
-#         print(a[z],end=" ")
-#         z=z+1
-#     print()
-# for i in range(1,n+1):
-#     k=i
-#     z=n-1
-#     for j in range(1,i+1):
-#         print(a[k-1],end=" ")
-#         k=k+z
-#         z=z-1
-#     print()
+a=[]
+c=0
+p=2
+n=5
+x=(n*(n+1))//2
+while c<x:
+    fc=0
+    for i in range(1,p+1):
+        if p%i==0:
+            fc+=1
+    if fc==2:
+        a.append(p)
+        c+=1
+    p+=1
+z=0
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(a[z],end=" ")
+        z=z+1
+    print()
+for i in range(1,n+1):
+    k=i
+    z=n-1
+    for j in range(1,i+1):
+        print(a[k-1],end=" ")
+        k=k+z
+        z=z-1
+    print()
 
 #1Q
 # n=int(input())
