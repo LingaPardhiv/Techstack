@@ -23,34 +23,34 @@
 # print(b)
 
 #Question
-a=[]
-c=0
-p=2
-n=5
-x=(n*(n+1))//2
-while c<x:
-    fc=0
-    for i in range(1,p+1):
-        if p%i==0:
-            fc+=1
-    if fc==2:
-        a.append(p)
-        c+=1
-    p+=1
-z=0
-for i in range(1,n+1):
-    for j in range(1,i+1):
-        print(a[z],end=" ")
-        z=z+1
-    print()
-for i in range(1,n+1):
-    k=i
-    z=n-1
-    for j in range(1,i+1):
-        print(a[k-1],end=" ")
-        k=k+z
-        z=z-1
-    print()
+# a=[]
+# c=0
+# p=2
+# n=5
+# x=(n*(n+1))//2
+# while c<x:
+#     fc=0
+#     for i in range(1,p+1):
+#         if p%i==0:
+#             fc+=1
+#     if fc==2:
+#         a.append(p)
+#         c+=1
+#     p+=1
+# z=0
+# for i in range(1,n+1):
+#     for j in range(1,i+1):
+#         print(a[z],end=" ")
+#         z=z+1
+#     print()
+# for i in range(1,n+1):
+#     k=i
+#     z=n-1
+#     for j in range(1,i+1):
+#         print(a[k-1],end=" ")
+#         k=k+z
+#         z=z-1
+#     print()
 
 #1Q
 # n=int(input())
@@ -123,3 +123,25 @@ for i in range(1,n+1):
 #     for j in range(i,n):
 #         if a[i]+a[j]==keyVal:
 #             print(a[i],a[j])
+
+#Question
+# 2 2 2 3 4 2 3 4 5 6 2 7 8 9 4 7 9
+# 8 - 1
+# 6 - 1
+# 5 - 1
+# 9 - 2
+# 7 - 2
+# 3 - 2
+# 4 - 3
+# 2 - 4
+
+a = list(map(int, input().split()))
+freq = {}
+for i in a:
+    if i in freq:
+        freq[i] += 1
+    else:
+        freq[i] = 1
+result = sorted(freq.items(), key=lambda x: (x[1], -x[0]))
+for num, count in result:
+    print(num, "-", count)
