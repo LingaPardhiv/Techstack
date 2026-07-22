@@ -26,3 +26,4 @@ print(arr1[2:5])
 print(arr1[:-2])
 print(arr1[1:-1])
 print(arr1[0:5:2])
+
